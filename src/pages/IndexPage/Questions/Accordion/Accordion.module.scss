@@ -1,0 +1,28 @@
+.accordion {
+  margin-top: 40px;
+  background-color: #474A51;
+  width: 600px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px 5px 5px 5px;
+  cursor: pointer;
+
+  .accordionTitle {
+    font-size: 20px;
+    margin-left: 10px;
+    color: #fff;
+  }
+
+  .accordionImage {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+  
+}
+
+.accordion:last-child {
+  margin-bottom: 80px;
+}

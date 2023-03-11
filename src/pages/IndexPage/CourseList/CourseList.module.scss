@@ -1,0 +1,11 @@
+.courseSelect {
+  margin-top: 7px;
+  background-color: #000;
+  
+  .courseSelectContent {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1150px;
+    margin: 0 auto;
+  }
+}

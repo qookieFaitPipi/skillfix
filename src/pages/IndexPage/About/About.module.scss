@@ -1,0 +1,50 @@
+.about {
+  margin-top: 7px;
+  background-color: #000;
+
+  .aboutContent {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    .aboutArrows {
+
+      .aboutArrowsImage {
+        width: 90px;
+        height: 90px;
+      }
+    }
+    .aboutTitle {
+      color: #fff;
+      text-align: center;
+      font-size: 40px;
+      font-weight: 600;
+      margin-top: 10px;
+    }
+    .aboutText {
+      color: #fff;
+      text-align: center;
+      font-size: 26px;
+      font-weight: 600;
+      margin-top: 80px;
+    }
+    .aboutContinue {
+      color: #fff;
+      text-align: center;
+      margin-top: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 80px;
+
+      .aboutContinueInput {
+        cursor: pointer;
+        width: 200px;
+        padding: 20px 20px 20px 20px;
+        background-color: #FA5252;
+        border-radius: 30px;
+        font-size: 24px;
+      }
+    }
+  }
+}

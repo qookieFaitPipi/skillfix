@@ -1,0 +1,16 @@
+.questions {
+  margin-top: 7px;
+  background-color: #000;
+
+  .questionsContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .questionsTitle {
+      font-size: 25px;
+      color: #fff;
+    }
+
+  }
+}

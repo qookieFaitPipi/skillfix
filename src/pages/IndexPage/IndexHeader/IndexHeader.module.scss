@@ -1,0 +1,43 @@
+.indexHeader {
+  background-color: black;
+
+  .indexHeaderContent {
+    display: flex;
+    justify-content: space-around;
+
+    .indexHeaderLogoBlock {
+      display: block;
+
+      .indexHeaderLogo {
+        width: 200px;
+        height: 60px;
+        cursor: pointer;
+      }
+    }
+    .indexHeaderNavBlock {
+      display: flex;
+      align-items: center;
+
+      .indexHeaderNavItem {
+        margin: 20px;
+
+        .indexHeaderNavLink {
+          color: #fff;
+          font-size: 22px;
+          font-weight: 600;
+          cursor: pointer;
+          text-decoration: none;
+        }
+
+        .indexHeaderUserIcon {
+          fill: #fff;
+        }
+      }
+
+      .indexHeaderAvatar {
+        fill: #fff;
+        stroke: #fff;
+      }
+    }
+  }
+}

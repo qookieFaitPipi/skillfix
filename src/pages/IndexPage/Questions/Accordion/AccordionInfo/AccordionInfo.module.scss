@@ -1,0 +1,15 @@
+.accordionInfo {
+  width: 600px;
+  height: 60px;
+  background-color: #fff;
+  border-radius: 0px 0px 5px 5px;
+
+  .accordionInfoContent {
+    color: #000;
+    margin: 10px;
+  }
+}
+
+.accordionInfo:last-child {
+  margin-bottom: 20px;
+}

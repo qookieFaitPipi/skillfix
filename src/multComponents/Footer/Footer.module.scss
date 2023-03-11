@@ -1,0 +1,64 @@
+.footer {
+  margin-top: 7px;
+  background-color: #000;
+
+  .footerContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .topFooter {
+      display: flex;
+      flex-direction: column;
+      margin-top: 60px;
+      align-items: center;
+
+
+      .topFooterTitleBlock {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+        .topFooterTitle {
+          color: #fff;
+          font-size: 25px;
+          font-weight: 600;
+        }
+
+        .topFootetSupTitle {
+          color: #fff;
+          font-size: 22px;
+          margin-top: 15px;
+        }
+      }
+
+      .topFooterContactBlock {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+        text-align: center;
+
+        .topFooterContactText {
+          color: #fff;
+          font-size: 20px;
+          font-weight: 600;
+        }
+      }
+    }
+
+    .bottomFooter {
+      display: flex;
+      margin-top: 80px;
+      align-items: center;
+      justify-content: space-around;
+      color: #fff;
+      margin-bottom: 10px;
+
+      .indexHeaderLogo {
+        width: 200px;
+        height: 60px;
+        cursor: pointer;
+      }
+    }
+  }
+}
