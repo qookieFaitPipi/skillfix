@@ -7,7 +7,8 @@ import {Link} from "react-router-dom";
 import userIcon from './../../../assets/images/icons/userIcon.svg';
 // logo
 import logo from './../../../assets/images/logo/logo1.png'
-const IndexHeader = () => {
+
+const IndexHeader = (props) => {
   return(
     <div className={styles.indexHeader}>
       <div className={styles.indexHeaderContent}>
@@ -28,7 +29,7 @@ const IndexHeader = () => {
             <Link className={styles.indexHeaderNavLink}>цены</Link>
           </div>
           <div className={styles.indexHeaderNavItem}>
-            <Link className={styles.indexHeaderNavLink}>ЛК</Link>
+            <Link className={styles.indexHeaderNavLink} onClick={() => props.setEntryModalActive(!props.entryModalActive)}>ЛК</Link>
           </div>
         </div>
       </div>
