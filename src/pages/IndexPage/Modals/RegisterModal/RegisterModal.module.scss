@@ -22,7 +22,7 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    background-color: #fff;
+    background-color: #000;
     width: 480px;
     height: 405px;
     border-radius: 5px;
@@ -36,6 +36,7 @@
       .registrationTitle {
         font-size: 24px;
         margin-left: 32px;
+        color: #fff;
       }
       .registrationModalClose {
         color: #c42525;
@@ -62,7 +63,7 @@
       border-radius: 5px;
       background-color: #23272a;
       color: #fff;
-      border: 1px black solid;
+      border: 1px #fff solid;
           
        box-shadow:
       0 1px 4px rgba(0, 0, 0, .3),
@@ -87,7 +88,7 @@
       border-radius: 5px;
       background-color: #23272a;
       color: #fff;
-      border: 1px black solid;
+      border: 1px #fff solid;
   
       box-shadow:
       0 1px 4px rgba(0, 0, 0, .3),
@@ -112,7 +113,7 @@
       border-radius: 5px;
       background-color: #23272a;
       color: #fff;
-      border: 1px black solid;
+      border: 1px #fff solid;
   
       box-shadow:
       0 1px 4px rgba(0, 0, 0, .3),
@@ -137,7 +138,7 @@
       border-radius: 5px;
       background-color: #23272a;
       color: #fff;
-      border: 1px black solid;
+      border: 1px #fff solid;
   
       box-shadow:
       0 1px 4px rgba(0, 0, 0, .3),
