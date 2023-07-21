@@ -1,0 +1,186 @@
+.entryModal {
+  position: absolute;
+  background-color: rgba(52, 58, 64, 0.6);
+  color:#fff;
+  display: none;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.6s;
+  z-index: -1;
+}
+
+.active {
+  position: fixed;
+  top: 0;
+  background-color: rgba(52, 58, 64, 0.6);
+  width: 100vw;
+  height: 100vh;
+  color:#fff;
+  transition: 0.6s;
+  opacity: 1;
+  z-index: 2;
+
+  .entryModalContent {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    pointer-events: all;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #000;
+    width: 480px;
+    height: 340px;
+    border-radius: 5px;
+    border: 1px #fff solid;
+
+    box-shadow:
+    0 1px 4px rgba(0, 0, 0, .3),
+    -23px 0 20px -23px rgba(0, 0, 0, .8),
+    23px 0 20px -23px rgba(0, 0, 0, .8),
+    0 0 40px rgba(0, 0, 0, .1) inset;
+
+    .entryTitleBlock {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .entryTitle {
+        font-size: 24px;
+        margin-left: 32px;
+        color: #fff;
+      }
+      .entryModalClose {
+        color: #c42525;
+        text-decoration: none;
+        height: 30px;
+        margin-right: 32px;
+        font-size: 27px;
+        cursor: pointer;
+      }
+    }
+    /*Email*/
+    .entryEmailLabel {
+      margin-left: 32px;
+      font-size: 12px;
+      color: #b9bbbe;
+      font-weight: 600;
+      margin-bottom: 3px;
+    }
+          
+    .entryEmailInput {
+      width: 416px;
+      height: 40px;
+      margin-left: 32px;
+      border-radius: 5px;
+      background-color: #23272a;
+      color: #fff;
+      border: 1px #fff solid;
+          
+       box-shadow:
+      0 1px 4px rgba(0, 0, 0, .3),
+      -23px 0 20px -23px rgba(0, 0, 0, .8),
+      23px 0 20px -23px rgba(0, 0, 0, .8),
+      0 0 40px rgba(0, 0, 0, .1) inset;
+    }
+  
+    .entryPasswordLabel {
+      margin-left: 32px;
+      margin-top: 20px;
+      font-size: 12px;
+      color: #b9bbbe;
+      font-weight: 600;
+      margin-bottom: 3px;
+    }
+  
+    .enrtyPasswordInut {
+      width: 416px;
+      height: 40px;
+      margin-left: 32px;
+      border-radius: 5px;
+      background-color: #23272a;
+      color: #fff;
+      border: 1px #fff solid;
+          
+      box-shadow:
+      0 1px 4px rgba(0, 0, 0, .3),
+      -23px 0 20px -23px rgba(0, 0, 0, .8),
+      23px 0 20px -23px rgba(0, 0, 0, .8),
+      0 0 40px rgba(0, 0, 0, .1) inset;
+    }
+    .entryContinueInput {
+      width: 320px;
+      padding: 8px 0px 8px 0px;
+      text-align: center;
+      text-decoration: none;
+      color: #fff;
+      margin-top: 10px;
+      border-radius: 5px;
+      background-color: #FA5252;
+      margin-left: 80px;
+      cursor: pointer;
+    }
+
+    .entryRedirectBlock {
+      display: flex;
+      justify-content: space-around;
+
+      .entryForgotLabel {
+        margin-top: 20px;
+        text-decoration: none;
+        color:royalblue;
+        cursor: pointer;
+        font-size: 12px;
+        font-weight: 600;
+        margin-bottom: 3px;
+
+      }
+      .entryForgotLabel:hover {
+        border-bottom: 1px solid;
+        color:royalblue;
+      }
+
+      .entryBackLabel {
+        margin-top: 20px;
+        font-size: 12px;
+        color: #b9bbbe;
+        font-weight: 600;
+        margin-bottom: 3px;
+  
+        .entryQue {
+          margin-left: 10px;
+          text-decoration: none;
+          color:royalblue;
+          cursor: pointer;
+  
+        }
+        .entryQue:hover {
+          border-bottom: 1px solid;
+          color:royalblue;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .active {
+    position: fixed;
+
+    .entryModalContent {
+      width: 80%;
+
+      .entryEmailInput {
+        width: 80%;
+      }
+      .enrtyPasswordInut {
+        width: 80%;
+      }
+      .entryContinueInput {
+        width: 80%;
+        margin-left: 34px;
+      }
+    }
+  }
+}

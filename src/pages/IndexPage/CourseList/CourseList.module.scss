@@ -1,0 +1,107 @@
+.courseSelect {
+  margin-top: 3px;
+  background-color: #000;
+  
+  .courseSelectContent {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1150px;
+    margin: 0 auto;
+  }
+
+  .courseAccess {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .courseAccessText {
+      color: #fff;
+      font-size: 20px;
+      font-weight: 600;
+      text-align: center;
+    }
+    .aboutArrows {
+      display: flex;
+      justify-content: center;
+      transform: rotate(90deg);
+      margin: 20px;
+
+      .aboutArrowsImage {
+        width: 40px;
+        height: 40px;
+      }
+    }
+
+    .aboutContinue {
+      color: #fff;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 0px;
+
+      .aboutContinueInput {
+        cursor: pointer;
+        width: 200px;
+        padding: 10px 10px 10px 10px;
+        background-color: #FA5252;
+        border-radius: 30px;
+        font-weight: 600;
+        font-size: 20px;
+        border: 2px #FA5252 solid;
+
+      }
+
+      .aboutContinueInput:hover {
+        color: #fff;
+        border: 2px #fff solid;
+        transition: 0.5s;
+      }
+    }
+  }
+}
+
+ @media (max-width: 767px) {
+  .courseSelect {
+    margin-top: 3px;
+    background-color: #000;
+
+    .courseSelectContent {
+      display: flex;
+      margin: 0;
+    }
+
+    .courseAccess {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+
+      .aboutArrows {
+        
+        .aboutArrowsImage {
+          transform: rotate(90deg);
+        }
+      }
+      .courseAccessText {
+        font-size: 20px;
+      }
+      .aboutArrows {
+        margin: 10;
+      }
+      .aboutContinue {
+        color: #fff;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .aboutContinueInput {
+          font-size: 20px;
+          padding: 15px 5px 15px 5px;
+
+        }
+      }
+    }
+  }
+ }

@@ -1,0 +1,122 @@
+.footer {
+  margin-top: 3px;
+  background-color: #000;
+
+  .footerContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .topFooter {
+      display: flex;
+      flex-direction: column;
+      margin-top: 60px;
+      align-items: center;
+
+
+      .topFooterTitleBlock {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+        .topFooterTitle {
+          color: #fff;
+          font-size: 26px;
+          font-weight: 600;
+        }
+
+        .topFootetSupTitle {
+          color: #fff;
+          font-size: 20px;
+          margin-top: 15px;
+        }
+      }
+
+      .topFooterContactBlock {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+        text-align: center;
+
+        .topFooterContactText {
+          color: #fff;
+          font-size: 20px;
+          font-weight: 600;
+        }
+      }
+    }
+
+    .bottomFooter {
+      display: flex;
+      margin-top: 80px;
+      align-items: center;
+      justify-content: space-around;
+      color: #fff;
+      margin-bottom: 10px;
+      
+      .shortInfo {
+        color: #fff;
+        text-decoration: none;
+      }
+      .shortInfo:hover {
+        color: #FA5252;
+      }
+      .indexHeaderLogo {
+        width: 200px;
+        height: 60px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .footer {
+    margin-top: 3px;
+    background-color: #000;
+
+    .footerContent {
+      display: flex;
+
+      .topFooter {
+        margin-top: 20px;
+
+        .topFooterTitleBlock {
+          display: flex;
+
+          .topFooterTitle {
+            color: #fff;
+            font-size: 20px;
+            font-weight: 600;
+          }
+          .topFootetSupTitle {
+            color: #fff;
+            font-size: 17px;
+            margin-top: 15px;
+          }
+        }
+        .topFooterContactBlock {
+          display: flex;
+          margin-top: 20px;
+
+          .topFooterContactText {
+            font-size: 17px;
+          }
+        }
+      }
+      .bottomFooter {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+
+        .rights {
+          order: 1;
+          font-size: 12px;
+        }
+        .indexHeaderLogo {
+          order: 0;
+        }
+      }
+    }
+  }
+}

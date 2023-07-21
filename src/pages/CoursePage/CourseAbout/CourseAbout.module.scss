@@ -1,0 +1,180 @@
+.courseAbout {
+  background-color: #000;
+
+  .courseAboutContent {
+    display: flex;
+    flex-direction: column;
+
+    .courseAboutMain {
+      display: flex;
+      margin-top: 10px;
+      justify-content: center;
+      flex-direction: column;
+      max-width: 1000px;
+      margin: 0 auto;
+
+      .courseAboutTitle {
+        display: flex;
+        align-items: center;
+        font-size: 26px;
+        color: #fff;
+        margin-top: 50px;
+        margin-left: 20px;
+
+        font-weight: 600;
+  
+        .courseAboutChevron {
+          text-align: start;
+          transform: rotate(270deg);
+          margin-left: 5px;
+          font-size: 30px;
+        }
+      }
+
+      .duration {
+
+        .durationText {
+          margin-top: 20px;
+          font-size: 20px;
+          color: #fff;
+          margin-left: 20px;
+        }
+      }
+      .lessonsCount {
+
+        .lessonsCountText {
+          font-size: 20px;
+          color: #fff;
+          margin-left: 20px;
+        }
+      }
+
+      .authorInfo {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: start;
+        margin-top: 20px;
+
+        .authorName {
+          font-size: 20px;
+          color: #fff;
+          font-weight: 600;
+          margin-left: 20px;
+        }
+        .authorDescription {
+          font-size: 20px;
+          color: #fff;
+          text-align: start;
+          max-width: 1000px;
+          margin-top: 5px;
+          margin-left: 20px;
+        }
+      }
+    }
+
+    .courseAccess {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+
+      .courseAccessText {
+        color: #fff;
+        font-size: 20px;
+        font-weight: 600;
+      }
+      .aboutArrows {
+        display: flex;
+        justify-content: center;
+        transform: rotate(90deg);
+        margin-top: 10px;
+        margin: 20px;
+  
+        .aboutArrowsImage {
+          width: 40px;
+          height: 40px;
+        }
+      }
+  
+      .aboutContinue {
+        color: #fff;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0px;
+  
+        .aboutContinueInput {
+          cursor: pointer;
+          width: 200px;
+          padding: 10px 10px 10px 10px;
+          background-color: #FA5252;
+          border-radius: 30px;
+          font-weight: 600;
+          font-size: 20px;
+          border: 2px #FA5252 solid;
+  
+        }
+  
+        .aboutContinueInput:hover {
+          color: #fff;
+          border: 2px #fff solid;
+          transition: 0.5s;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .courseAbout {
+    display: block;
+
+    .courseAboutContent {
+      display: flex;
+      flex-direction: column;
+      align-items:flex-start;
+
+      .courseAboutTitle {
+        font-size: 20px;
+        white-space: nowrap;
+
+        .courseAboutChevron {
+          font-size: 22px;
+        }
+      }
+      .courseAboutMain {
+        display: flex;
+        justify-content: space-between;
+        
+        .courseAboutTitle {
+          font-size: 20px;
+        }
+        .duration {
+
+          .durationText {
+            font-size: 16px;
+          }
+        }
+        .lessonsCount {
+
+          .lessonsCountText {
+            font-size: 16px;
+          }
+        }
+        .authorInfo {
+
+          .authorDescription {
+            font-size: 16px;
+            margin-bottom: 20px;
+          }
+        }
+      }
+
+      .courseAccess {
+        margin-left: 10px;
+      }
+    }
+  }
+}

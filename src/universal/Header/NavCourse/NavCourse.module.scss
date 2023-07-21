@@ -1,0 +1,17 @@
+.headerNavItem {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+
+  .headerNavLink {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  .indexHeaderNavLink:hover {
+    color:#FA5252;
+    transition: 0.4s;
+  }
+}

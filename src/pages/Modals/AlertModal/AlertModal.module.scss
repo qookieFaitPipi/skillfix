@@ -1,0 +1,95 @@
+.alertModal {
+  opacity: 0;
+  position: absolute;
+  z-index: -1;
+  display: none;
+}
+
+.active {
+  opacity: 1;
+  z-index: 12222222222;
+  position: fixed;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+
+  .alertModalContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    pointer-events: all;
+    top: 14%;
+    width: 350px;
+    margin-right: 40px;
+    border-radius: 5px;
+    border: 1px #fff solid;
+    background-color: #000;
+    z-index: 12122121212;
+  
+    box-shadow:
+    0 1px 4px rgba(0, 0, 0, .3),
+    -23px 0 20px -23px rgba(0, 0, 0, .8),
+    23px 0 20px -23px rgba(0, 0, 0, .8),
+    0 0 40px rgba(0, 0, 0, .1) inset;
+  
+    .alertModalInfoBlock {
+      display: flex;
+      flex-direction: column;
+      margin: 10px;
+
+      .alertModalInfoText {
+        color: #fff;
+        font-size: 14px;
+      }
+    }
+    .alertModalDartBlock {
+      display: flex;
+      align-items: self-start;
+      margin: 10px;
+
+      .alertModalDart {
+        color: #c42525;
+        font-size: 27px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .active {
+    opacity: 1;
+    z-index: 1222;
+    position: fixed;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+
+    .alertModalContent {
+      display: flex;
+      position: fixed;
+      top: 0;
+      pointer-events: all;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #000;
+      width: 300px;
+      border-radius: 5px;
+      border: 1px #fff solid;
+  
+      box-shadow:
+      0 1px 4px rgba(0, 0, 0, .3),
+      -23px 0 20px -23px rgba(0, 0, 0, .8),
+      23px 0 20px -23px rgba(0, 0, 0, .8),
+      0 0 40px rgba(0, 0, 0, .1) inset;
+    }
+  }
+}
