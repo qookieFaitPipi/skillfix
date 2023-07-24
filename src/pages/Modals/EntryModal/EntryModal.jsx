@@ -37,6 +37,8 @@ const EntryModal = () => {
       console.log(err);
     }
   }
+  
+  console.log(document.cookie)
 
   const toRegisterModal = () => {
     dispatch(setEntryModalState({entryModalState: false}));

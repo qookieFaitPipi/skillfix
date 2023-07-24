@@ -8,6 +8,10 @@
   color: #fff;
   height: 250px;
   margin-top: 30px;
+
+  @media (max-width: 767px) {
+    margin: 5px;
+  }
   
   .courseThemeItemVideo {
     width: 300px;
@@ -15,6 +19,11 @@
     filter: brightness(100%);
     border: 1px #fff solid;
     border-radius: 30px;
+
+    @media (max-width: 767px) {
+      width: 150px;
+      filter: brightness(100%);
+    }
   }
 
   .courseThemeItemText {
@@ -25,22 +34,5 @@
     max-width: 200px;
     height: 60px;
     margin-top: 10px;
-  }
-}
-
-@media (max-width: 767px) {
-  .courseThemeItem {
-    display: flex;
-    margin: 5px;
-
-    .courseThemeItemVideo {
-      width: 100px;
-      z-index: 121221;
-      filter: brightness(100%);
-    }
-
-    .courseThemeItemText {
-      height: auto;
-    }
   }
 }

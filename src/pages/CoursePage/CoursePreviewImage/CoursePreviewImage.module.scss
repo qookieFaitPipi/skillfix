@@ -11,6 +11,12 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
+
+  @media (max-width: 767px) {
+    margin-top: 3px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
   
   .coursePreviewImageText {
     font-size: 35px;
@@ -59,11 +65,3 @@
   }
 }
 
-@media (max-width: 767px) {
-  .coursePreviewImage {
-    margin-top: 113px;
-    background-repeat: no-repeat;
-    background-position: center;
-
-  }
-}

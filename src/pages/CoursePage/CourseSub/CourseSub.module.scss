@@ -10,25 +10,17 @@
     margin-top: 30px;
     margin-bottom: 30px;
 
+    @media (max-width: 767px) {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
     .courseSubTitle {
       font-size: 20px;
       color: #fff;
-    }
-  }
-}
 
-@media (max-width: 767px) {
-  .courseSub {
-    display: flex;
-
-    .courseSubTitleBlock {
-      margin-top: 20px;
-      margin-bottom: 20px;
-
-      .courseSubTitle {
-        font-size: 20px;
+      @media (max-width: 767px) {
         font-size: 16px;
-
         text-align: center;
       }
     }

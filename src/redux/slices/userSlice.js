@@ -13,6 +13,7 @@ export const userSlice = createSlice({
       state.userLogin = action.payload.userLogin;
       state.userPassword = action.payload.userPassword;
       state.isEntered = true;
+      document.cookie = "user=" + action.payload.userLogin;
     },
     logout: (state, action) => {
       state.userLogin = null;

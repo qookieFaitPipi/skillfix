@@ -16,28 +16,24 @@
   background-blend-mode: multiply;
   background-color: #5c5c5c;
 
+  @media (max-width: 767px) {
+    height: 150px;
+    width: 200px;
+  }
+
   .courseItemText {
     padding-bottom: 20px;
     font-size: 18px;
     font-weight: 600;
-  }
 
-}
-
-.courseItem:hover {
-  color: #FA5252;
-  transition: 0.4s;
-
-}
-
-@media (max-width: 767px) {
-  .courseItem {
-    height: 150px;
-    width: 200px;
-
-    .courseItemText {
+    @media (max-width: 767px) {
       font-size: 15px;
       margin: 5px;
     }
   }
+}
+.courseItem:hover {
+  color: #FA5252;
+  transition: 0.4s;
+
 }

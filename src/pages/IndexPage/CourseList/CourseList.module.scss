@@ -14,11 +14,16 @@
     align-items: center;
     justify-content: center;
 
+    @media (max-width: 767px) {
+      flex-direction: column;
+    } 
+
     .courseAccessText {
       color: #fff;
       font-size: 20px;
       font-weight: 600;
       text-align: center;
+
     }
     .aboutArrows {
       display: flex;
@@ -26,9 +31,17 @@
       transform: rotate(90deg);
       margin: 20px;
 
+      @media (max-width: 767px) {
+        margin: 10px;
+      }
+
       .aboutArrowsImage {
         width: 40px;
         height: 40px;
+
+        @media (max-width: 767px) {
+          transform: rotate(90deg);
+        } 
       }
     }
 
@@ -50,6 +63,9 @@
         font-size: 20px;
         border: 2px #FA5252 solid;
 
+        @media (max-width: 767px) {
+          padding: 15px 5px 15px 5px;
+        }
       }
 
       .aboutContinueInput:hover {
@@ -60,48 +76,3 @@
     }
   }
 }
-
- @media (max-width: 767px) {
-  .courseSelect {
-    margin-top: 3px;
-    background-color: #000;
-
-    .courseSelectContent {
-      display: flex;
-      margin: 0;
-    }
-
-    .courseAccess {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-
-      .aboutArrows {
-        
-        .aboutArrowsImage {
-          transform: rotate(90deg);
-        }
-      }
-      .courseAccessText {
-        font-size: 20px;
-      }
-      .aboutArrows {
-        margin: 10;
-      }
-      .aboutContinue {
-        color: #fff;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        .aboutContinueInput {
-          font-size: 20px;
-          padding: 15px 5px 15px 5px;
-
-        }
-      }
-    }
-  }
- }

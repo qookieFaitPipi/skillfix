@@ -13,6 +13,9 @@
       margin-top: 60px;
       align-items: center;
 
+      @media (max-width: 767px) {
+        margin-top: 20px;
+      }
 
       .topFooterTitleBlock {
         display: flex;
@@ -23,12 +26,20 @@
           color: #fff;
           font-size: 26px;
           font-weight: 600;
+
+          @media (max-width: 767px) {
+            font-size: 20px;
+          }
         }
 
         .topFootetSupTitle {
           color: #fff;
           font-size: 20px;
           margin-top: 15px;
+
+          @media (max-width: 767px) {
+            font-size: 17px;
+          }
         }
       }
 
@@ -38,14 +49,21 @@
         margin-top: 50px;
         text-align: center;
 
+        @media (max-width: 767px) {
+          margin-top: 20px;
+        }
+
         .topFooterContactText {
           color: #fff;
           font-size: 20px;
           font-weight: 600;
+
+          @media (max-width: 767px) {
+            font-size: 17px;
+          }
         }
       }
     }
-
     .bottomFooter {
       display: flex;
       margin-top: 80px;
@@ -53,6 +71,17 @@
       justify-content: space-around;
       color: #fff;
       margin-bottom: 10px;
+
+      @media (max-width: 767px) {
+        margin-top: 20px;
+        flex-direction: column;
+      }
+      .rights {
+        @media (max-width: 767px) {
+          order: 1;
+          font-size: 12px;
+        }
+      }
       
       .shortInfo {
         color: #fff;
@@ -65,55 +94,8 @@
         width: 200px;
         height: 60px;
         cursor: pointer;
-      }
-    }
-  }
-}
 
-@media (max-width: 767px) {
-  .footer {
-    margin-top: 3px;
-    background-color: #000;
-
-    .footerContent {
-      display: flex;
-
-      .topFooter {
-        margin-top: 20px;
-
-        .topFooterTitleBlock {
-          display: flex;
-
-          .topFooterTitle {
-            color: #fff;
-            font-size: 20px;
-            font-weight: 600;
-          }
-          .topFootetSupTitle {
-            color: #fff;
-            font-size: 17px;
-            margin-top: 15px;
-          }
-        }
-        .topFooterContactBlock {
-          display: flex;
-          margin-top: 20px;
-
-          .topFooterContactText {
-            font-size: 17px;
-          }
-        }
-      }
-      .bottomFooter {
-        display: flex;
-        flex-direction: column;
-        margin-top: 20px;
-
-        .rights {
-          order: 1;
-          font-size: 12px;
-        }
-        .indexHeaderLogo {
+        @media (max-width: 767px) {
           order: 0;
         }
       }

@@ -13,9 +13,18 @@
       transform: rotate(180deg);
       margin-top: 10px;
 
+      @media (max-width: 767px) {
+        margin-top: 20px;
+      } 
+
       .aboutArrowsImage {
         width:60px;
         height: 60px;
+
+        @media (max-width: 767px) {
+          width: 50px;
+          height: 50px;
+        } 
       }
     }
     .aboutTitle {
@@ -24,7 +33,10 @@
       font-size: 35px;
       font-weight: 600;
       margin-top: 30px;
-
+      
+      @media (max-width: 767px) {
+        font-size: 30px;
+      }
     }
     .aboutText {
       display: flex;
@@ -36,11 +48,22 @@
       font-weight: 600;
       margin-top: 10px;
 
+      @media (max-width: 767px) {
+        font-size: 20px;
+        margin-top: 30px;
+      }
+
       .aboutSupText {
         margin-top: 10px;
         font-weight: 600;
         font-size: 20px;
         text-align: start;
+
+        @media (max-width: 767px) {
+          font-size: 18px;
+          margin-top: 20px;
+          padding: 15px;
+        }
       }
     }
     .aboutContinue {
@@ -50,6 +73,10 @@
       justify-content: center;
       align-items: center;
       margin-top: 40px;
+
+      @media (max-width: 767px) {
+        margin-top: 20px;
+      }
 
       .aboutContinueInput {
         cursor: pointer;
@@ -61,68 +88,15 @@
         font-size: 20px;
         border: 2px #FA5252 solid;
 
+        @media (max-width: 767px) {
+          padding: 15px 5px 15px 5px;
+        }
       }
 
       .aboutContinueInput:hover {
         color: #fff;
         border: 2px #fff solid;
         transition: 0.5s;
-      }
-    }
-  }
-}
-
-@media (max-width: 767px) {
-  .about {
-    margin-top: 3px;
-    background-color: #000;
-
-    .aboutContent {
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-
-      .aboutArrows {
-        display: flex;
-        justify-content: center;
-        transform: rotate(180deg);
-        margin-top: 20px;
-
-        .aboutArrowsImage {
-          width: 50px;
-          height: 50px;
-        }
-      }
-
-      .aboutTitle {
-        font-size: 30px;
-        margin-left: 20px;
-        margin-right: 20px;
-      }
-      .aboutText {
-        font-size: 20px;
-        margin-top: 30px;
-
-        .aboutSupText {
-          font-size: 18px;
-          margin-left: 10px;
-          margin-right: 10px;
-          margin-top: 20px;
-        }
-      }
-
-      .aboutContinue {
-        color: #fff;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 20px;
-
-        .aboutContinueInput {
-          font-size: 20px;
-          padding: 15px 5px 15px 5px;
-        }
       }
     }
   }

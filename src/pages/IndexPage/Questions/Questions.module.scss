@@ -12,23 +12,10 @@
       color: #fff;
       margin-top: 30px;
       font-weight: 600;
-    }
 
-  }
-}
-
- @media (max-width: 767px) {
-  .questions {
-    margin-top: 3px;
-    background-color: #000;
-
-    .questionsContent {
-      display: flex;
-
-      .questionsTitle {
+      @media (max-width: 767px) {
         font-size: 20px;
-        color: #fff;
       }
     }
   }
- }
+}

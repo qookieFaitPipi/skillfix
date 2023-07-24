@@ -10,6 +10,10 @@
     height: 90vh;
     width: 100%;
 
+    @media (max-width: 767px) {
+      height: 600px;
+    }
+
     .video {
       width: 100%;
       object-fit: cover;
@@ -26,18 +30,6 @@
       align-items: center;
       font-size: 32px;
       text-align: center;
-    }
-  }
-}
-
-@media (max-width: 767px) {
-  .fullPageVideo {
-    display: block;
-    margin-top: 113px;
-
-
-    .fullPageVideoContent {
-      height: 600px;
     }
   }
 }

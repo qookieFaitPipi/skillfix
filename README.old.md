@@ -1,2 +1,0 @@
-# skillfix
-Website for Skillfix
