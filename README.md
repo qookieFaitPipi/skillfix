@@ -14,4 +14,3 @@ Website for <a href="http://skillfix-platform.ru">«Образовательна
 
 Для загрузки модулей необходимо: `yarn install`<br/>
 Для запуска frontend-части необходимо: `yarn start`
-s
