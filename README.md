@@ -10,7 +10,7 @@ Website for <a href="http://skillfix-platform.ru">«Образовательна
 <img src="https://github.com/devicons/devicon/blob/master/icons/redux/redux-original.svg" title="Redux" alt="Redux " width="40" height="40"/>&nbsp;
 
 ### 🖥 &nbsp;Demo :
-<a href='https://github.com/qookieFaitPipi/skillfix/assets/58183484/99a76f26-9060-4ca9-bd5c-3493971c817e'>Link</a><br/>
+<a href='https://github.com/qookieFaitPipi/skillfix/assets/58183484/99a76f26-9060-4ca9-bd5c-3493971c817e'>Link</a>
 
 Для загрузки модулей необходимо: `yarn install`<br/>
 Для запуска frontend-части необходимо: `yarn start`
