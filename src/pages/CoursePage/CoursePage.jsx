@@ -1,13 +1,13 @@
 import React from 'react';
 
 // components
-import Header from './../../universal/Header/Header';
+import Header from './../../Universal/Header/Header';
 import CoursePreviewImage from './CoursePreviewImage/CoursePreviewImage';
 import CourseVideo from './CourseVideo/CourseVideo';
 import CourseThemes from './CourseThemes/CourseThemes';
 import CourseAbout from './CourseAbout/CourseAbout';
 import CourseSub from './CourseSub/CourseSub';
-import Footer from './../../universal/Footer/Footer';
+import Footer from './../../Universal/Footer/Footer';
 
 const CoursePage = () => {
   return (

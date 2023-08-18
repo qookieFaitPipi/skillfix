@@ -1,7 +1,16 @@
 # **Skillfix**
-Website for <a href="http://skillfix-platform.ru">Skillfix</a><br/><br/>
+Website for <a href="http://skillfix-platform.ru">«Образовательная платформа Skillfix»</a><br/><br/>
 <img width="1470" alt="mainScreen" src="https://github.com/qookieFaitPipi/skillfix/assets/58183484/a5212169-66bd-41f5-ac58-34eaf7a897ea"><br/><br/>
-<a href='https://github.com/qookieFaitPipi/skillfix/assets/58183484/99a76f26-9060-4ca9-bd5c-3493971c817e'>Demo</a><br/>
 
-Для загрузки необходимых модулей необходимо: `yarn install`<br/>
+### 🛠 &nbsp;Languages and Tools :
+<img src="https://github.com/devicons/devicon/blob/master/icons/html5/html5-original.svg" title="HTML5" alt="HTML" width="40" height="40"/>&nbsp;
+<img src="https://github.com/devicons/devicon/blob/master/icons/css3/css3-plain-wordmark.svg"  title="CSS3" alt="CSS" width="40" height="40"/>&nbsp;
+<img src="https://github.com/devicons/devicon/blob/master/icons/javascript/javascript-original.svg" title="JavaScript" alt="JavaScript" width="40" height="40"/>&nbsp;
+<img src="https://github.com/devicons/devicon/blob/master/icons/react/react-original-wordmark.svg" title="React" alt="React" width="40" height="40"/>&nbsp;
+<img src="https://github.com/devicons/devicon/blob/master/icons/redux/redux-original.svg" title="Redux" alt="Redux " width="40" height="40"/>&nbsp;
+
+### 🖥 &nbsp;Demo :
+<a href='https://github.com/qookieFaitPipi/skillfix/assets/58183484/99a76f26-9060-4ca9-bd5c-3493971c817e'>Link</a><br/>
+
+Для загрузки модулей необходимо: `yarn install`<br/>
 Для запуска frontend-части необходимо: `yarn start`

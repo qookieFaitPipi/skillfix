@@ -2,12 +2,12 @@ import React, { useEffect } from 'react';
 import axios from 'axios';
 
 // components
-import Header from '../../universal/Header/Header';
+import Header from '../../Universal/Header/Header';
 import FullPageVideo from './FullPageVideo/FullPageVideo';
 import About from './About/About';
 import CourseList from './CourseList/CourseList';
 import Questions from './Questions/Questions';
-import Footer from '../../universal/Footer/Footer';
+import Footer from '../../Universal/Footer/Footer';
 
 // modals
 import EntryModal from '../Modals/EntryModal/EntryModal';
@@ -21,11 +21,11 @@ const IndexPage = () => {
   const dispatch = useDispatch()
 
   useEffect(() => {
-    axios.get('http://0.0.0.0:12345/get_courses').then((response) => {
+    axios.get('http://hosting2.alexavr.ru/get_courses').then((response) => {
       dispatch(setCourses({
         isLoaded: true,
         courseList: response.data
-      }))
+      }));
     });
   }, [])
 

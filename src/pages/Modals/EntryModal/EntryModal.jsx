@@ -2,10 +2,6 @@ import React, { useState } from "react";
 import axios from "axios";
 import styles from './EntryModal.module.scss';
 
-// cookies
-import { useCookies } from 'react-cookie';
-
-
 // redux
 import { useDispatch } from 'react-redux';
 import { useSelector } from "react-redux";
@@ -25,21 +21,22 @@ const EntryModal = () => {
       'password': userPassword
     }
     try {
-      await axios.post('http://0.0.0.0:12345/login', userData)
-      dispatch(login({
-        userLogin: userLogin,
-        userPassword: userPassword,
-        isEntered: true,
-      }))
-      dispatch(setAlertModalState({alertModalState: true}));
-      dispatch(setEntryModalState({entryModalState: false}));
+      await axios.post('http://hosting2.alexavr.ru/auth', userData).then((response) => {
+        if(response.data.confirmed) {
+          dispatch(login({
+            userLogin: userLogin,
+            userPassword: userPassword,
+            isEntered: true,
+          }));
+          dispatch(setAlertModalState({alertModalState: true}));
+          dispatch(setEntryModalState({entryModalState: false}));
+        }
+      });
     } catch(err) {
       console.log(err);
     }
   }
   
-  console.log(document.cookie)
-
   const toRegisterModal = () => {
     dispatch(setEntryModalState({entryModalState: false}));
     dispatch(setRegisterModalState({registerModalState: true}));

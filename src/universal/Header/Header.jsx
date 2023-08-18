@@ -44,8 +44,9 @@ const Header = () => {
         </Link>
         <div className={styles.headerNavBlock}>
           {isSelected ? <NavCourse /> : <NavIndex />}
+          
           <div className={styles.headerUserItem} onClick={userIconClick}>
-            <img className={styles.headerAvatar} src={avatar} alt="" />
+            <img className={styles.headerAvatar} src={avatar} alt="userIcon" />
             <div className={userPopupActive ? styles.active : styles.headerUserPopup}>
               <div className={styles.userPopupContent}>
                 <div className={styles.userPopupLogin}>{userLogin}</div>

@@ -22,7 +22,7 @@ const RegisterModal = () => {
       'password': userPassword
     }
     try {
-      await axios.post('http://0.0.0.0:12345/register', userData);
+      await axios.post('http://hosting2.alexavr.ru/register', userData);
     } catch(err) {
       console.log(err);
     }

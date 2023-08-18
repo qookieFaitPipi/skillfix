@@ -38,12 +38,16 @@
       }
 
       .headerUserItem {
+        position: relative;
         display: flex;
         align-items: center;
         margin-left: 20px;
         cursor: pointer;
 
         .headerAvatar {
+          width: 80px;
+          height: 80px;
+          
           @media (max-width: 767px) {
             width: 40px;
             height: 40px;
@@ -52,20 +56,20 @@
 
         .headerUserPopup {
           position: absolute;
-          opacity: 0;
+          display: none;
           width: 70px;
           height: 70px;
         }
         .active {
           position: absolute;
-          opacity: 1;
+          display: block;
           background-color: #000;
-          right: 110px;
+          right: 30px;
           top: 80px;
           border-radius: 5px;
           border: 1px solid #fff;
           transition: 0.3s;
-          z-index: 3;
+          z-index: 2;
 
           .userPopupContent {
             display: flex;
@@ -75,7 +79,7 @@
 
             .userPopupLogin {
               text-align: center;
-              margin-top: 35px;
+              margin-top: 15px;
               font-weight: 600;
               font-size: 16px;
               color: #fff;
@@ -88,6 +92,7 @@
               justify-content: center;
               align-items: center;
               margin-top: 10px;
+              margin-bottom: 10px;
         
               .aboutContinueInput {
                 cursor: pointer;
@@ -99,26 +104,6 @@
                 font-size: 16px;
               }
             }
-          }
-        }
-      }
-    }
-  }
-}
-
-@media (max-width: 767px) {
-  .header {
-    .headerContent {
-      .headerNavBlock {
-        .headerNavItem {
-          .headerNavLink {
-            font-size: 16px;
-            white-space: nowrap;
-          }
-          .headerAvatar {
-            width: 40px;
-            height: 40px;
-            margin-right: 0px;
           }
         }
       }
