@@ -14,7 +14,7 @@ const CourseItem = (props) => {
 
   const selectThisCourse = async() => {
     try {
-      const response = await axios('http://hosting2.alexavr.ru/get_course/' + props.id);
+      const response = await axios('http://0.0.0.0:5000/get_course/' + props.id);
       dispatch(selectCourse({thisCourseConfig: response.data, thisVideo: response.data.preview}))
     } catch(err) {
       console.log(err);

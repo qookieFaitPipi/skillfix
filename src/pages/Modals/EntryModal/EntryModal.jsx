@@ -21,7 +21,7 @@ const EntryModal = () => {
       'password': userPassword
     }
     try {
-      await axios.post('http://hosting2.alexavr.ru/auth', userData).then((response) => {
+      await axios.post('http://0.0.0.0:5000/auth', userData).then((response) => {
         if(response.data.confirmed) {
           dispatch(login({
             userLogin: userLogin,

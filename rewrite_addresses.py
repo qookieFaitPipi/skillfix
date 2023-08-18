@@ -1,7 +1,8 @@
 import os
 
-prev = "http://0.0.0.0:12345"
-post = "http://hosting2.alexavr.ru"
+prev = "http://hosting2.alexavr.ru"
+post = "http://0.0.0.0:5000"
+
 #prev = "import youtube_dl"
 #post = "import yt_dlp as youtube_dl"
 def rewrite(path):

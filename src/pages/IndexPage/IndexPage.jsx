@@ -21,7 +21,7 @@ const IndexPage = () => {
   const dispatch = useDispatch()
 
   useEffect(() => {
-    axios.get('http://hosting2.alexavr.ru/get_courses').then((response) => {
+    axios.get('http://0.0.0.0:5000/get_courses').then((response) => {
       dispatch(setCourses({
         isLoaded: true,
         courseList: response.data
