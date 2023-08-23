@@ -5,9 +5,9 @@ import CourseNavbar from "./CourseNavbar/CourseNavbar";
 import CourseContent from "./CourseContent/CourseContent";
 
 // checron2
-import chevron2 from './../../../assets/images/icons/chevron2.png';
+import chevron2 from './../../../Assets/images/icons/chevron2.png';
 
-const CourseList = (props) => {
+const CourseList = () => {
   return(
     <div className={styles.courseSelect}>
       <div className={styles.courseSelectContent}>

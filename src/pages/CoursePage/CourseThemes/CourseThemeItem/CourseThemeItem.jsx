@@ -3,7 +3,7 @@ import styles from './CourseThemeItem.module.scss';
 
 // redux
 import { useDispatch } from 'react-redux';
-import { selectVideo } from "../../../../redux/slices/selectSlice";
+import { selectVideo } from "../../../../Redux/slices/selectSlice";
 
 const CourseThemeItem = (props) => {
   const dispatch = useDispatch()

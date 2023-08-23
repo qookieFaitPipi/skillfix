@@ -5,7 +5,7 @@ import styles from './RegisterModal.module.scss';
 // redux
 import { useDispatch } from 'react-redux';
 import { useSelector } from "react-redux";
-import { setEntryModalState, setRegisterModalState } from './../../../redux/slices/modalSlice';
+import { setEntryModalState, setRegisterModalState } from './../../../Redux/slices/modalSlice';
 
 const RegisterModal = () => {
   const [userName, setUserName] = useState('');
@@ -22,7 +22,7 @@ const RegisterModal = () => {
       'password': userPassword
     }
     try {
-      await axios.post('http://0.0.0.0:5000/register', userData);
+      await axios.post('http://hosting2.alexavr.ru/register', userData);
     } catch(err) {
       console.log(err);
     }

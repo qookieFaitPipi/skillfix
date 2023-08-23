@@ -2,7 +2,7 @@ import React from "react";
 import styles from './Footer.module.scss';
 
 // logo
-import logo from './../../assets/images/logo/logo.png';
+import logo from './../../Assets/images/logo/logo.png';
 
 const Footer = () => {
   return(

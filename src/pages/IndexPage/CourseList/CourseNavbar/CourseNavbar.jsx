@@ -4,7 +4,7 @@ import styles from './CourseNavbar.module.scss';
 // redux
 import { useSelector } from "react-redux";
 import { useDispatch } from 'react-redux';
-import { setCourseType } from "../../../../redux/slices/filterSlice";
+import { setCourseType } from "../../../../Redux/slices/filterSlice";
 const CourseNavbar = () => {
   const dispatch = useDispatch()
   const {courseType} = useSelector((state) => state.filterSlice);

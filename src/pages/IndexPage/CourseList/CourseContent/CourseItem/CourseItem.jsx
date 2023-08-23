@@ -7,14 +7,14 @@ import {Link} from "react-router-dom";
 
 // redux 
 import { useDispatch } from 'react-redux';
-import { selectCourse } from '../../../../../redux/slices/selectSlice';
+import { selectCourse } from '../../../../../Redux/slices/selectSlice';
 
 const CourseItem = (props) => {
   const dispatch = useDispatch()
 
   const selectThisCourse = async() => {
     try {
-      const response = await axios('http://0.0.0.0:5000/get_course/' + props.id);
+      const response = await axios('http://hosting2.alexavr.ru/get_course/' + props.id);
       dispatch(selectCourse({thisCourseConfig: response.data, thisVideo: response.data.preview}))
     } catch(err) {
       console.log(err);

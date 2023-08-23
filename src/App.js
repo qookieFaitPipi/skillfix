@@ -4,8 +4,8 @@ import React from "react";
 import {Routes,Route} from 'react-router-dom';
 
 // pages
-import IndexPage from "./pages/IndexPage/IndexPage";
-import CoursePage from "./pages/CoursePage/CoursePage";
+import IndexPage from "./Pages/IndexPage/IndexPage";
+import CoursePage from "./Pages/CoursePage/CoursePage";
 
 function App() {
   return (

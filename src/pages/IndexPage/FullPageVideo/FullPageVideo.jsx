@@ -2,7 +2,7 @@ import React from "react";
 import styles from './FullPageVideo.module.scss';
 
 // video
-import bgVideo from './../../../assets/videos/intro.mp4';
+import bgVideo from './../../../Assets/videos/intro.mp4';
 
 const FullPageVideo = () => {
   return(

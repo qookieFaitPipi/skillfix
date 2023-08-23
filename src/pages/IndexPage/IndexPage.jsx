@@ -15,13 +15,13 @@ import RegisterModal from '../Modals/RegisterModal/RegisterModal';
 
 // redux
 import { useDispatch } from 'react-redux';
-import { setCourses } from '../../redux/slices/courseSlice';
+import { setCourses } from '../../Redux/slices/courseSlice';
 
 const IndexPage = () => {
   const dispatch = useDispatch()
 
   useEffect(() => {
-    axios.get('http://0.0.0.0:5000/get_courses').then((response) => {
+    axios.get('http://hosting2.alexavr.ru/get_courses').then((response) => {
       dispatch(setCourses({
         isLoaded: true,
         courseList: response.data

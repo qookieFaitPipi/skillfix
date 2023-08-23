@@ -2,7 +2,7 @@ import React from "react";
 import styles from './About.module.scss';
 
 // checron2
-import chevron2 from './../../../assets/images/icons/chevron2.png';
+import chevron2 from './../../../Assets/images/icons/chevron2.png';
 
 const About = () => {
   return(

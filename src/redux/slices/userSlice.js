@@ -6,18 +6,20 @@ const initialState = {
   isEntered: false
 }
 export const userSlice = createSlice({
-  name: 'user',
+  name: 'userSlice',
   initialState,
   reducers: {
     login: (state, action) => {
       state.userLogin = action.payload.userLogin;
       state.userPassword = action.payload.userPassword;
       state.isEntered = true;
+      document.cookie = "token=" + action.payload.userLogin;
     },
-    logout: (state, action) => {
+    logout: (state) => {
       state.userLogin = null;
       state.userPassword = null;
       state.isEntered = false;
+      document.cookie = "token=-1";
     },
   },
 })

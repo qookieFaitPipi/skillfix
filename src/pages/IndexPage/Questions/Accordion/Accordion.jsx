@@ -3,7 +3,7 @@ import styles from './Accordion.module.scss';
 
 import AccordionInfo from "./AccordionInfo/AccordionInfo";
 
-import chevron from './../../../../assets/images/icons/chevron.svg'
+import chevron from './../../../../Assets/images/icons/chevron.svg'
 const Accordion = (props) => {
   const [show, setShow] = useState(false);
 

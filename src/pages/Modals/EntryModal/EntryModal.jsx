@@ -5,8 +5,8 @@ import styles from './EntryModal.module.scss';
 // redux
 import { useDispatch } from 'react-redux';
 import { useSelector } from "react-redux";
-import { setEntryModalState, setRegisterModalState, setAlertModalState } from './../../../redux/slices/modalSlice';
-import { login } from './../../../redux/slices/userSlice';
+import { setEntryModalState, setRegisterModalState, setAlertModalState } from '../../../Redux/slices/modalSlice';
+import { login } from '../../../Redux/slices/userSlice';
 
 const EntryModal = () => {
   const [userLogin, setUserLogin] = useState('');
@@ -21,7 +21,7 @@ const EntryModal = () => {
       'password': userPassword
     }
     try {
-      await axios.post('http://0.0.0.0:5000/auth', userData).then((response) => {
+      await axios.post('http://hosting2.alexavr.ru/auth', userData).then((response) => {
         if(response.data.confirmed) {
           dispatch(login({
             userLogin: userLogin,
